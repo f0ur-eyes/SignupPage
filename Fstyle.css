@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    --blue: #000099;
+    --blue90: #00009990;
+    --blue60: #00009960;
+    --blue30: #00009930;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+#forgot{
+    width: 18rem;
+    min-height: 20rem;
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--blue30);
+    color: var(--blue);
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs label{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.inputs .text{
+    border-radius: 5rem;
+    padding: 1rem .75rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue30);
+    outline: none;
+    border: 2px solid var(--blue30);
+    color: var(--blue);
+    transition: .3s ease;
+}
+.inputs .text:focus{
+    border: 2px solid var(--blue);
+    font-size: large;
+    background-color: var(--blue60);
+}
+.changepass{
+    width: 100%;
+    height:fit-content;
+}
+.changepass input[type=submit]{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    transition: .2s ease;
+    background-color: var(--blue90);
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+    font-weight: 700;
+}
+.changepass input[type=submit]:hover{
+    background-color: var(--blue);
+    color: aliceblue;
+    font-weight: 300;
+    font-size: large;
+    margin: 5%;
+    width: 90%;
+}
+#code{
+    display: flex;
+    flex-direction: row;
+    width:fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.inputs .digit{
+    width:6%;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    background-color: var(--blue30);
+    outline: none;
+    border: 2px solid var(--blue30);
+    color: var(--blue);
+    transition: .3s ease;
+
+}
+.inputs .digit:focus{
+    border: 2px solid var(--blue);
+    font-size: large;
+    width:40%;
+    background-color: var(--blue60);
+}
+.inputs .digit:hover{
+    border: 2px solid var(--blue);
+    font-size: large;
+    width:40%;
+}
+#mail{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+#mail .button{
+    background-color: var(--blue90);
+    height: 100%;
+    border: none;
+    border-radius: 1rem;
+    transition: .2s ease;
+    font-weight: 700;
+    width: 10rem;
+}
+#mail .button:hover{
+    background-color: var(--blue);
+    color: aliceblue;
+    font-weight: 300;
+    font-size: medium;
+
+}
+#send{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}

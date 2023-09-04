@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    --blue: #000099;
+    --blue90: #00009990;
+    --blue60: #00009960;
+    --blue30: #00009930;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+}
+#login{
+    width: 18rem;
+    min-height: 15rem;
+    border: 1px solid var(--blue);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--blue);
+    background-color: var(--blue30);
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs label{
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.inputs .text{
+    border-radius: 5rem;
+    padding: 1rem .75rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--blue30);
+    outline: none;
+    border: 2px solid var(--blue30);
+    color: var(--blue);
+    transition: .3s ease;
+}
+.inputs .text:focus{
+    border: 2px solid var(--blue);
+    font-size: large;
+    background-color: var(--blue60);
+}
+.login{
+    width: 100%;
+    height:fit-content;
+}
+.login input[type=submit]{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    transition: .2s ease;
+    background-color: var(--blue90);
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+    font-weight: 700;
+}
+.login input[type=submit]:hover{
+    background-color: var(--blue);
+    color: aliceblue;
+    font-weight: 300;
+    font-size: large;
+    margin: 5%;
+    width: 90%;
+}
+.signUp a{
+    color: var(--blue);
+    transition: .3s ease;
+}
+.signUp a:hover{
+    font-weight: 700;
+    font-size: larger;
+}
+.forgotPass a{
+    color: var(--blue);
+    transition: .3s ease;
+}
+.forgotPass a:hover{
+    font-weight: 700;
+    font-size: larger;
+}
+.sentence{
+    color: black;
+    font-size: large;
+    font-weight: 300;
+    font-style: italic;
+}
